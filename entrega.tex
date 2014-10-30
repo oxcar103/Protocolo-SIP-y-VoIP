@@ -85,6 +85,7 @@
 \renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
 \renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
 \newcommand{\imagen}[2]{\begin{center} \includegraphics[width=90mm]{#1} \\#2 \end{center}}
+\newcommand{\RFC}[1]{\href{https://www.ietf.org/rfc/rfc#1.txt}{RFC-#1}}
 
 \renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
 \begin{center} % Center align
@@ -100,7 +101,6 @@
 \vspace{40pt} % Some vertical space between the author block and abstract
 \end{flushright}
 }
-
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
@@ -125,7 +125,6 @@ SIP y VoIP} % Subtitle
 }
 \pagebreak
 
-\section{Bla bla bla}
-Bla bla bla
-
+\section{Historia}
+SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el IETF MMUSIC Working Group con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia. SIP define una arquitectura de señalización y control para VoIP. Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus Proyecto de Norma en 1999 y la IETF asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo. En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.
 \end{document}
