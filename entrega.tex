@@ -125,32 +125,36 @@ SIP y VoIP} % Subtitle
 }
 \pagebreak
 
-\section{Historia}
-SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el IETF MMUSIC Working Group con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia. SIP define una arquitectura de señalización y control para VoIP. Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus Proyecto de Norma en 1999 y la IETF asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo. En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.
-\section{Tecnología VoIP}
-La tecnología VoIP, Voice Over Internet Protocol usa de redes IP y sus protocolos de comunicación de voz, permitiendo que la voz al igual que los datos utilicen el mismo medio de transmisión. Puede usarse para transportar la comunicación entre dos extremos sea con motivos empresariales o domésticos. También varían los mecanismos de control para garantizar la máxima calidad de servicio.\\ 
-
-Existen dos modos de transporte de la voz sobre IP:
-	\begin{itemize}
-	\item A través de lineas privadas y dedicadas que proporcionan una buena calidad de servicio. 
-	\item A través de redes públicas como internet, que tienen una calidad de servicio más reducida.
-	\end{itemize}
+\section{SIP}
+	\subsection{Historia}
+	SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el IETF MMUSIC Working Group con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia. Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus Proyecto de Norma en 1999 y la IETF asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo. En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.\\
 	
-\section{Problemas del VoIP}
-\subsection{Retardo o latencia}
-Establecidos los retardos de tránsito y de procesado de la conversación, la conversación es aceptable si este se encuentra por entre los 50 - 150 ms. 
-El ratardo puede causar dos problemas principales:
-	\begin{itemize}
-	\item Eco: causado por las señales que se reflejan en el equipo telefónico del extremo opuesto y regresan al hablante.
-	\item Pérdida de tramas: se puede ocasionar por una congestión de red o corrupción de datos. Como la voz se transmite a tiempo real, no es práctico retransmitir las tramas perdidas ya que puede producir retardos adicionales. La retransmisión de muestras de voz perdidas son llamadas Frame Erasures. La pérdida de tramas afecta a la calidad de voz dependiendo del modo de gestión de los Frame Erasures que usen los terminales de voz.
-	\end{itemize}
-\subsection{Jitter}
-Variación de tiempo entre los paquetes causada por la red. Suele considerarse como una señal de ruido, en general como un cambio indeseado y abrupto de la propiedad de una señal. Puede afectar tanto a la amplitud como a la frecuencia o fase.
-Existen distintos tipos:
-	\begin{itemize}
-	\item Jitter determinista
-	\item Jitter aleatorio
-	\end{itemize}
+	\subsection{Aplicaciones del SIP}
 
-\section{Calidad de servicio (QoS)}
+\section{VoIP}
+	La tecnología VoIP, Voice Over Internet Protocol usa de redes IP y sus protocolos de comunicación de voz, permitiendo que la voz al igual que los datos utilicen el mismo medio de transmisión. Puede usarse para transportar la comunicación entre dos extremos sea con motivos empresariales o domésticos. También varían los mecanismos de control para garantizar la máxima calidad de servicio.\\
+	
+	Existen dos modos de transporte de la voz sobre IP:
+		\begin{itemize}
+		\item A través de lineas privadas y dedicadas que proporcionan una buena calidad de servicio. 
+		\item A través de redes públicas como internet, que tienen una calidad de servicio más reducida.
+		\end{itemize}
+		
+	\subsection{Problemas del VoIP}
+	\subsubsection{Retardo o latencia}
+	Establecidos los retardos de tránsito y de procesado de la conversación, la conversación es aceptable si este se encuentra por entre los 50 - 150 ms. 
+	El ratardo puede causar dos problemas principales:
+		\begin{itemize}
+		\item Eco: causado por las señales que se reflejan en el equipo telefónico del extremo opuesto y regresan al hablante.
+		\item Pérdida de tramas: se puede ocasionar por una congestión de red o corrupción de datos. Como la voz se transmite a tiempo real, no es práctico retransmitir las tramas perdidas ya que puede producir retardos adicionales. La retransmisión de muestras de voz perdidas son llamadas Frame Erasures. La pérdida de tramas afecta a la calidad de voz dependiendo del modo de gestión de los Frame Erasures que usen los terminales de voz.
+		\end{itemize}
+	\subsubsection{Jitter}
+	Variación de tiempo entre los paquetes causada por la red. Suele considerarse como una señal de ruido, en general como un cambio indeseado y abrupto de la propiedad de una señal. Puede afectar tanto a la amplitud como a la frecuencia o fase.
+	Existen distintos tipos:
+		\begin{itemize}
+		\item Jitter determinista
+		\item Jitter aleatorio
+		\end{itemize}
+	
+	\subsection{Calidad de servicio (QoS)}
 \end{document}
