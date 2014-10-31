@@ -129,6 +129,38 @@ SIP y VoIP} % Subtitle
 	\subsection{Historia}
 	SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el IETF MMUSIC Working Group con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia. Puede funcionar en Transmission Control Protocol(TCP), User Datagram Protocol(UDP) o Stream Control Transmission Protocol(SCTP). Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus Proyecto de Norma en 1999 y la IETF asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo. En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.\\
 	
+	\subsection{Arquitectura del SIP}
+	SIP es un protocolo basado en texto con sintáxis similar al HTTP. Por tanto, tiene 2 tipos de mensajes: \textbf{Peticiones} y \textbf{Respuestas}.
+		\subsubsection{Peticiones}
+		La primera línea de una petición tiene un método y una URI para hacer la petición. Para peticiones SIP, \RFC{3261} definió los siguientes métodos:
+		\begin{itemize}
+			\item \textbf{REGISTER}: Usado por un agente de usuario para registrarse.
+			\item \textbf{INVITE}: Usado para establecer una sesión multimedia entre agentes de usuario.
+			\item \textbf{ACK}: Confirma que los intercambios de mensajes son confiables.
+			\item \textbf{CANCEL}: Cancela una petición pendiente.
+			\item \textbf{BYE}: Termina una sesión.
+			\item \textbf{OPTIONS}: Solicita información sobre las posibilidades de un agente de usuario sin la necesidad de comenzar una sesión.
+		\end{itemize}
+		Más tarde, se introdujeron nuevos métodos en SIP:
+		\begin{itemize}
+			\item \textbf{PRACK} en el \RFC{3262}.
+			\item \textbf{UPDATE} en el \RFC{3311}.
+			\item \textbf{MESSAGE} en el \RFC{3428}.
+			\item \textbf{REFER} en el \RFC{3515}.
+			\item \textbf{PUBLISH} en el \RFC{3903}.
+			\item \textbf{INFO} en el \RFC{6086}.
+			\item \textbf{NOTIFY} y \textbf{SUBSCRIBE} en el \RFC{6665}.
+		\end{itemize}
+		\subsubsection{Respuestas}
+		La primera línea de una respuesta tiene un código de respuesta. Los tipos de respuestas de SIP se clasifican en:
+		\begin{itemize}
+			\item \textbf{Provisional(1xx)}: La petición fue recibida y está siendo  procesada.
+			\item \textbf{Success(2xx)}: La acción fue recibida satisfactoriamente, entendida y aceptada.
+			\item \textbf{Redirection(3xx)}: Nuevas acciones necesitan ser realizadas para completar la petición.
+			\item \textbf{Client Error(4xx)}: La petición tiene un fallo de sintaxis o no puede ser rellenada por el servidor.
+			\item \textbf{Server Error(5xx)}: El servidor falló al rellenar una petición aparentemente válida.
+			\item \textbf{Global Failure(6xx)}: La petición no puede ser rellenada en ningún servidor.
+		\end{itemize}
 	\subsection{Aplicaciones del SIP}
 		SIP define una arquitectura de señalización y control ampliamente para llamadas de voz y vídeo sobre Internet Protocol(VoIP). También puede ser usado para crear, modificar y terminar sesiones de streaming.\\
 		OpenWengo, software libre de telefonía, y Gizmo Project, en software propietario, han implementado SIP en sus clientes y servicios. Ambos programas usan SIP para aceptar las llamadas de un cliente a otro.\\
