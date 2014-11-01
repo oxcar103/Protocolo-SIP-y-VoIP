@@ -127,7 +127,13 @@ SIP y VoIP} % Subtitle
 
 \section{SIP}
 	\subsection{Historia}
-	SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el \textbf{IETF MMUSIC Working Group} con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia. Puede funcionar en Transmission Control Protocol(\textbf{TCP}), User Datagram Protocol(\textbf{UDP}) o Stream Control Transmission Protocol(\textbf{SCTP}). Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus Proyecto de Norma en 1999 y la \textbf{IETF} asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo. En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.\\
+	SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el \textbf{IETF MMUSIC Working Group} con la intención de ser el estándar para la iniciación, modificación y finalización de sesiones interactivas de usuario donde intervienen elementos multimedia.
+	
+	Puede funcionar en Transmission Control Protocol(\textbf{TCP}), User Datagram Protocol(\textbf{UDP}) o Stream Control Transmission Protocol(\textbf{SCTP}).
+	
+	Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus de Proyecto de Norma en 1999 y la \textbf{IETF} asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo.
+	
+	En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.
 	
 	\subsection{Arquitectura del SIP}
 	SIP es un protocolo basado en texto con sintáxis similar al \textbf{HTTP}. Por tanto, tiene 2 tipos de mensajes: \textbf{Peticiones} y \textbf{Respuestas}.
@@ -217,6 +223,28 @@ SIP y VoIP} % Subtitle
 		\hline
 		\end{tabular}
 		\label{tabla:vs}
+		
+		\subsection{Calidad de servicio (QoS)}
+		Para poder implementar VoIP(así como otros servicios interactivos), resulta un requisito indespensable la aplicación de QoS.
+		
+		QoS es el rendimiento promedio visto por los usuarios de una red de telefonía o de ordenadores. Cuantitativamente, se mide considerados varios aspectos del servicio de red:
+		\begin{itemize}
+			\item Tasas de errores.
+			\item Ancho de banda.
+			\item Rendimiento.
+			\item Retraso en la transmisión.
+			\item Disponibilidad.
+			\item Jitter(\ref{jitter}).
+			\item Y muchos más.
+		\end{itemize}
+		
+		Mucha tecnología ha sido desarrollada para permitir a las redes de ordenadores ser tan útiles como las redes de teléfono para conversaciones de audio, así como el soporte de nuevas aplicaciones con demanda de servicios más estrictos.
+		
+		Ejemplos de mecanismos de QoS:
+		\begin{itemize}
+			\item Priorización de tráfico.
+			\item Garantía de un ancho de banda mínimo.
+		\end{itemize}
 	
 	\subsection{Problemas del VoIP}
 		\subsubsection{Retardo o latencia}
@@ -234,27 +262,4 @@ SIP y VoIP} % Subtitle
 				\item Jitter determinista
 				\item Jitter aleatorio
 				\end{itemize}}
-	
-	\subsection{Calidad de servicio (QoS)}
-	Para poder implementar VoIP(así como otros servicios interactivos), resulta un requisito indespensable la aplicación de QoS.
-	
-	QoS es el rendimiento promedio visto por los usuarios de una red de telefonía o de ordenadores. Cuantitativamente, se mide considerados varios aspectos del servicio de red:
-	\begin{itemize}
-		\item Tasas de errores.
-		\item Ancho de banda.
-		\item Rendimiento.
-		\item Retraso en la transmisión.
-		\item Disponibilidad.
-		\item Jitter(\ref{jitter}).
-		\item Y muchos más.
-	\end{itemize}
-	
-	Mucha tecnología ha sido desarrollada para permitir a las redes de ordenadores ser tan útiles como las redes de teléfono para conversaciones de audio, así como el soporte de nuevas aplicaciones con demanda de servicios más estrictos.
-	
-	Ejemplos de mecanismos de QoS:
-	\begin{itemize}
-		\item Priorización de tráfico.
-		\item Garantía de un ancho de banda mínimo.
-	\end{itemize}
-	
 \end{document}
