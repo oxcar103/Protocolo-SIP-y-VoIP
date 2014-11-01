@@ -185,36 +185,35 @@ SIP y VoIP} % Subtitle
 	
 	Existen dos modos de transporte de la voz sobre IP:
 		\begin{itemize}
-		\item A través de lineas privadas y dedicadas que proporcionan una buena calidad de servicio.
+		\item A través de líneas privadas y dedicadas que proporcionan una buena calidad de servicio.
 		\item A través de redes públicas como internet, que tienen una calidad de servicio más reducida.
 		\end{itemize}
 		
 	\subsection{Telefonía IP vs. Telefonía Convencional}
-		Los sistemas de telefonía tradicional están guiados por un sistema muy simple pero ineficiente denominado conmutación de circuitos. Así es una llamada en telefonía convencional:
-		
-		\begin{itemize}
-		\item Se levanta el teléfono y se conecta con el operador local de telefonía.
-		\item Se marca el número de teléfono.
-		\item La llamada es transmitida a través del conmutador(\textbf{switch}) de su operador apuntando hacia el teléfono marcado.
-		\item Una conexión es creada entre tu teléfono y el de la persona que estás llamando, entremedio el operador comunica las líneas.
-		\item El teléfono suena y alguien contesta la llamada.
-		\item La conexión abre el circuito.
-		\item Uno habla por un tiempo determinado y luego cuelga el teléfono.
-		\item Cuando se cuelga el teléfono el circuito automáticamente es cerrado, de esta manera se liberan todas las líneas que intervinieron.
-		\end{itemize}
-		
-		Supongamos estas dos personas tienen sus teléfonos analógicos conectados a través de un adaptador digital-analógico(\textbf{ATA}). Así sería la comunicación mediante Telefonía VoIP:
-		
-		\begin{itemize}
-		\item Se levanta el teléfono, lo que envía una señal al \textbf{ATA}, y éste envía un tono de llamado.
-		\item Se marca el número de teléfono.
-		\item Los datos del número son enviados al proveedor de VoIP para revisar que está en un formato válido.
-		\item El proveedor determina a quién corresponde este número y lo transforma en una dirección \textbf{IP}.
-		\item El proveedor conecta los dos dispositivos que intervienen en la llamada y se envía una señal al \textbf{ATA} del receptor para que suene su teléfono.
-		\item Cuando alguien contesta, se establece una comunicación tu ordenador y el de la otra persona. La infraestructura de internet maneja los paquetes de voz como haría con un email o con una página web.
-		\item Se habla por un periodo de tiempo. Durante la conversación, tu sistema y el del receptor transmiten y reciben paquetes entre sí.
-		\item Cuando se termina la llamada, se cuelga el teléfono. En este momento el circuito es cerrado y el \textbf{ATA} envía una señal al proveedor de Telefonía \textbf{IP} informando que la llamada terminó.
-		\end{itemize}
+		Los sistemas de telefonía tradicional están guiados por un sistema muy simple pero ineficiente denominado conmutación de circuitos.\\
+		Para establecer una llamada VoIP, las dos personas deben tener sus teléfonos analógicos conectados a través de un adaptador digital-analógico(\textbf{ATA}).\\
+		\begin{tabular}{|p{6cm}|p{6cm}|}
+		\hline
+		Telefonía convencional & VoIP \\
+		\hline \hline
+		Se levanta el teléfono y se conecta con el operador local de telefonía. & Se levanta el teléfono, lo que envía una señal al \textbf{ATA}, y éste envía un tono de llamado. \\
+		\hline
+		Se marca el número de teléfono. & Se marca el número de teléfono. \\
+		\hline
+		La llamada es transmitida a través del conmutador(\textbf{switch}) de su operador apuntando hacia el teléfono marcado. & Los datos del número son enviados al proveedor de VoIP para revisar que está en un formato válido. \\
+		\hline
+		Una conexión es creada entre tu teléfono y el de la persona que estás llamando, entremedio el operador comunica las líneas. & El proveedor determina a quién corresponde este número y lo transforma en una dirección \textbf{IP}. \\
+		\hline
+		El teléfono suena y alguien contesta la llamada. & El proveedor conecta los dos dispositivos que intervienen en la llamada y se envía una señal al \textbf{ATA} del receptor para que suene su teléfono. \\
+		\hline
+		La conexión abre el circuito. & Cuando alguien contesta, se establece una comunicación tu ordenador y el de la otra persona. La infraestructura de internet maneja los paquetes de voz como haría con un email o con una página web. \\
+		\hline
+		Uno habla por un tiempo determinado y luego cuelga el teléfono. & Se habla por un periodo de tiempo. Durante la conversación, tu sistema y el del receptor transmiten y reciben paquetes entre sí. \\
+		\hline
+		Cuando se cuelga el teléfono el circuito automáticamente es cerrado, de esta manera se liberan todas las líneas que intervinieron. & Cuando se termina la llamada, se cuelga el teléfono. En este momento el circuito es cerrado y el \textbf{ATA} envía una señal al proveedor de Telefonía \textbf{IP} informando que la llamada terminó. \\
+		\hline
+		\end{tabular}
+		\label{tabla:vs}
 	\subsection{Problemas del VoIP}
 	\subsubsection{Retardo o latencia}
 	Establecidos los retardos de tránsito y de procesado de la conversación, la conversación es aceptable si este se encuentra por entre los 50 - 150 ms. 
