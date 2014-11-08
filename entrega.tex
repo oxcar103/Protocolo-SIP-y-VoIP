@@ -246,7 +246,8 @@ SIP y VoIP} % Subtitle
 			\item Garantía de un ancho de banda mínimo.
 		\end{itemize}
 	
-	\subsection{Problemas del VoIP}
+	\subsection{Requisitos de QoS}
+	Se deben tener encuenta que los siguientes ascpectos para garantizar la calidad del sistema:
 		\subsubsection{Retardo o latencia}
 		Establecidos los retardos de tránsito y de procesado de la conversación, la conversación es aceptable si este se encuentra por entre los 50 - 150 ms. 
 		El ratardo puede causar dos problemas principales:
@@ -258,8 +259,8 @@ SIP y VoIP} % Subtitle
 		\subsubsection{Jitter} \label{jitter}
 			Variación de tiempo entre los paquetes causada por la red. Suele considerarse como una señal de ruido, en general como un cambio indeseado y abrupto de la propiedad de una señal. Puede afectar tanto a la amplitud como a la frecuencia o fase.
 			Existen distintos tipos:
-				\textbf{\begin{itemize}
-				\item Jitter determinista
-				\item Jitter aleatorio
-				\end{itemize}}
+				\begin{description}
+				\item[- Jitter determinista:] Las partes periodicas del jitter. Surge normalmente a partir de señales de ruido externas que se acoplan al sistema de transmisión o las partes del jitter dependientes de los datos. Estas partes dependen de las consecuencias de los datos enviados y son provocadas por la interferencia entre símbolos.
+				\item[- Jitter aleatorio:] Este surge a raiz del ruido.
+				\end{description}
 \end{document}
