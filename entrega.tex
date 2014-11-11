@@ -134,7 +134,27 @@ SIP y VoIP} % Subtitle
 	Fue publicado en febrero del 1996 en la \RFC{2543}, posteriormente se fueron realizando cambios significativos y se presentó otra versión que se presento como un borrador internacional en 1998. El protocolo consiguió el estatus de Proyecto de Norma en 1999 y la \textbf{IETF} asignó un grupo de trabajo, de manera que podían conocer el crecimiento de dicho protocolo.
 	
 	En el año 2000 fue proporcionado un borrador que contenía corrección de errores y aclaraciones para SIP publicado en \RFC{2543}. Este documento fue publicado como \RFC{3261} que reemplazó a \RFC{2543}.
-	
+	\subsection{Funcionalidades SIP}
+		\subsubsection{Establecimiento, Modificación y fin de sesión}
+		El estandar SIP define la forma en la que se lleva a cabo el establecimiento, modificación y el fin de comunicación multimedia. Usuado frecuentemente para añadir nuevos usuarios a una sesión previamente establecida. Para iniciar un proceso de comunicación es necesario que se que:
+		\begin{itemize}
+			\item El usuario añadido al proceso debe aceptar participar en dicha sesión.
+			\item Los usuarios deben establecer los parámetros multimedia a utilizar.
+		\end{itemize}
+		El funcionamiento de SIP se realiza de la siguiente forma:
+		\begin{itemize}
+			\item Los usuarios establecen los códec de voz y video a usar u otros parámetros multimedia.
+			\item Si se producen cambios durante la comunicación se notifican a los usuarios que formen parte de la misma.
+			\item Por último en el momento en el que uno de los usuarios desea llevar a cabo la desconexión, se notifica al resto de usuarios de la misma.
+		\end{itemize}				
+		\subsubsection{Movilidad}
+		Una de las más importantes ventajas de la telefonia IP es que se puede usar el servicio sin necesidad de encontrarse en una red especifia, el protocolo SIP antes de realizar la comunicación entre usuarios requiere del reconocimiento de la dirección IP que poseen los participantes además hace uso de las siguientes herramientas:
+		\begin{description}
+		\item[-]\textbf{URL SIP:} Se le asigna una URL a cada usuario de la red con el objetivo de dar una referencia única en internet. Esta está formada por diferentes campos de información y sigue el siguiente formato:\\
+		\textbf{SIP:// <user>: <password> @ <host><tlf>:<PORT>}\\
+		El campo de <password> es necesario para la autentificación, si este falta genera un error.
+		\item[-]\textbf{Registros:} Esto permite al usuario cambiar su ubicación en lo que a dirección IP se refiere, al iniciar sesión se envia un mensaje SIP al servidor donde se especifica el nombre de usuario y la nueva IP asociada a él. Despues de esto si se quiere entablar una comunicación con este usuario el primer mensaje será dirigido al servidor y la respuesta puede ser dada por un proxy o bién producirse una redirección donde la respuesta será la ubicación de destinatario.
+		\end{description}
 	\subsection{Arquitectura del SIP}
 	SIP es un protocolo basado en texto con sintáxis similar al \textbf{HTTP}. Por tanto, tiene 2 tipos de mensajes: \textbf{Peticiones} y \textbf{Respuestas}.
 		\subsubsection{Peticiones}
