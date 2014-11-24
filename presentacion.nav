@@ -24,20 +24,20 @@
 \headcommand {\beamer@subsectionentry {0}{1}{4}{9}{Aplicaciones SIP}}\headcommand {\beamer@subsectionpages {7}{8}}
 \headcommand {\slideentry {1}{4}{1}{9/9}{Aplicaciones SIP}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{4}{2}{10/10}{Aplicaciones SIP}{0}}
+\headcommand {\sectionentry {2}{VoIP}{10}{VoIP}{0}}
+\headcommand {\beamer@sectionpages {3}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{10}{Telefonia IP vs Telefonia convencional}}\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\slideentry {2}{1}{1}{10/10}{Telefonia IP vs Telefonia convencional}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{4}{3}{11/11}{Aplicaciones SIP}{0}}
+\headcommand {\slideentry {2}{1}{2}{11/11}{Telefonia IP vs Telefonia convencional}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{4}{4}{12/12}{Aplicaciones SIP}{0}}
+\headcommand {\slideentry {2}{1}{3}{12/12}{Telefonia IP vs Telefonia convencional}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{4}{5}{13/13}{Aplicaciones SIP}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{13}{Calidad de servicio (QoS)}}\headcommand {\beamer@subsectionpages {10}{12}}
+\headcommand {\slideentry {2}{2}{1}{13/13}{Calidad de servicio (QoS)}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {2}{VoIP}{14}{VoIP}{0}}
-\headcommand {\beamer@sectionpages {3}{13}}
-\headcommand {\beamer@subsectionpages {9}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{14}{Telefonia IP vs Telefonia convencional}}\headcommand {\beamer@subsectionpages {14}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Calidad de servicio (QoS)}}\headcommand {\beamer@subsectionpages {14}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Requisitos QoS}}\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Requisitos QoS}}\headcommand {\beamer@subsectionpages {13}{13}}
 \headcommand {\slideentry {2}{3}{1}{14/14}{Requisitos QoS}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\slideentry {2}{3}{2}{15/15}{Requisitos QoS}{0}}
@@ -46,14 +46,8 @@
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {2}{3}{4}{17/17}{Requisitos QoS}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {2}{3}{5}{18/18}{Requisitos QoS}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {2}{3}{6}{19/19}{Requisitos QoS}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {2}{3}{7}{20/20}{Requisitos QoS}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {14}{20}}
-\headcommand {\beamer@sectionpages {14}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\def \inserttotalframenumber {20}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {14}{17}}
+\headcommand {\beamer@sectionpages {10}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\def \inserttotalframenumber {17}}
