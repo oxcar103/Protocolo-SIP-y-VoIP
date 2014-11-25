@@ -6,3 +6,6 @@
 *.synctex.gz
 *.dvi
 *.out
+*.nav
+*.snm
+*.vrb
