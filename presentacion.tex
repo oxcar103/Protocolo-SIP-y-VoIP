@@ -116,7 +116,8 @@
 {
   Universidad de Granada \\ % Your institution for the title page
   \medskip
-  \textit{lsotpal@correo.ugr.es} % Your email address
+  \textit{lsotpal@correo.ugr.es\\
+  oscarbg@correo.ugr.es} % Your email address
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -155,14 +156,14 @@ SIP o Protocolo de Inicio de Sesiones es un protocolo desarrollado por el \textb
 	Puede funcionar en Transmission Control Protocol(\textbf{TCP}), User Datagram Protocol(\textbf{UDP}) o Stream Control Transmission Protocol(\textbf{SCTP}).\\~\\
 	Fue publicado en:
 	\begin{itemize}
-	\item RFC\_2543, RFC\_3261.
+	\item RFC-2543, RFC-3261.
 	\end{itemize}
 \end{frame}
 \subsection{Funcionalidades}
 \begin{frame}
 \frametitle{Especificación, Modificación y fin de sesión}
 El estandar SIP define la forma en la que se lleva a cabo el establecimiento, modificación y el fin de comunicación multimedia. \\~\\
-Para iniciar un proceso de comunicación es necesario que se que:
+Para iniciar un proceso de comunicación es necesario que:
 		\begin{itemize}
 			\item El usuario añadido al proceso debe aceptar participar en dicha sesión.
 			\item Los usuarios deben establecer los parámetros multimedia a utilizar.\\~\\
@@ -174,12 +175,12 @@ Para iniciar un proceso de comunicación es necesario que se que:
 		\begin{itemize}
 			\item Los usuarios establecen los códec de voz y video a usar u otros parámetros multimedia.
 			\item Si se producen cambios durante la comunicación se notifican a los usuarios que formen parte de la misma.
-			\item Por último en el momento en el que uno de los usuarios desea llevar a cabo la desconexión, se notifica al resto de usuarios de la misma.
+			\item Por último, en el momento en el que uno de los usuarios desea llevar a cabo la desconexión, se notifica al resto de usuarios de la misma.
 		\end{itemize}
 \end{frame}
 \begin{frame}
 \frametitle{Movilidad}
-		Una de las más importantes ventajas de la telefonia IP es que se puede usar el servicio sin necesidad de encontrarse en una red especifia, el protocolo SIP antes de realizar la comunicación entre usuarios requiere del reconocimiento de la dirección IP.\\~\\
+		Una de las más importantes ventajas de la telefonía IP es que se puede usar el servicio sin necesidad de encontrarse en una red específica. El protocolo SIP, antes de realizar la comunicación entre usuarios, requiere del reconocimiento de la dirección IP.\\~\\
 	Herramientas que usa:
 		\begin{description}
 		\item[-]\textbf{URL SIP:} Se le asigna una URL a cada usuario de la red con el objetivo de dar una referencia única en internet. Tiene el siguiente formato:\\
@@ -219,6 +220,8 @@ Para iniciar un proceso de comunicación es necesario que se que:
 SIP define una arquitectura de señalización y control ampliamente para llamadas de voz y vídeo sobre Internet Protocol(VoIP). También puede ser usado para crear, modificar y terminar sesiones de streaming.\\~\\
 Programas que usan SIP son:
 		\textbf{\begin{itemize}
+			\item OpenWengo
+			\item Gizmo Project
 			\item Twinkle
 			\item Tapioca
 			\item KCall
@@ -301,19 +304,6 @@ Programas que usan SIP son:
 				\item Jitter aleatorio
 				\end{itemize}
 \end{frame}
-%% Bibliografía
-\begin{frame}
-\frametitle{Referencias}
-\footnotesize{
-  \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-    \bibitem[Smith, 2012]{p1} John Smith (2012)
-      \newblock Title of the publication
-      \newblock \emph{Journal Name} 12(3), 45 -- 678.
-  \end{thebibliography}
-}
-\end{frame}
-
-%------------------------------------------------
 
 \begin{frame}
 \Huge{\centerline{Fin.}}
