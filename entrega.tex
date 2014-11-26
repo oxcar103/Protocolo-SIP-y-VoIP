@@ -187,6 +187,15 @@ SIP y VoIP} % Subtitle
 			\item \textbf{Server Error(5xx)}: El servidor falló al rellenar una petición aparentemente válida.
 			\item \textbf{Global Failure(6xx)}: La petición no puede ser rellenada en ningún servidor.
 		\end{itemize}
+	\subsection{Servidor SIP}
+		En primer lugar un agente de usuario es una entidad de SIP que interactua con el participante de la sesión que tiene normalmente una interfaz para usuario. Son aplicaciones que envian y reciben peticiones SIP.\\
+		El servidor SIP acepta las peticiones SIP que se realizan para dar una repsuesta. Un servidor SIP se encarga de llevar a cabo funciones que pueden necesitar los distintos agentes de usuario, este actua en respuesta a una petición de uno de los agentes de usuario.
+		\subsubsection{Proxy SIP}
+			Un servidor Proxy SIP se encarga de recibir peticiones SIP desde un agente de usuario y actuar en nombre de este para la transmision o respuesta a las peticiones.
+		\subsubsection{Servidor de Localización}
+			Se encarga de proporcionar información acerca de la localización del usuario. Es necesario conocer el lugar de localización de los usuarios para que la petición de establecimiento de sesión pueda llevarse a cabo.
+		\subsubsection{Servidor de redireccionamiento SIP}
+		Se encarga de aceptar las peticiones SIP y mapea la direccion en nuevas direcciones que son retornadas a los clientes. Estos servidores de redireccionamiento se diferencian  de los servidores proxy en que estos no realizan su propia petición SIP.
 	\subsection{Aplicaciones del SIP}
 		SIP define una arquitectura de señalización y control ampliamente para llamadas de voz y vídeo sobre Internet Protocol(VoIP). También puede ser usado para crear, modificar y terminar sesiones de streaming.
 		
