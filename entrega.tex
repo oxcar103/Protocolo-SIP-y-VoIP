@@ -243,6 +243,10 @@ SIP y VoIP} % Subtitle
 			\item A través de líneas privadas y dedicadas que proporcionan una buena calidad de servicio.
 			\item A través de redes públicas como internet, que tienen una calidad de servicio más reducida.
 		\end{itemize}
+	\subsection{Funcionamiento}
+	Se digitaliza la voz en paquetes de datos que se envian por la red para volverla a convertir a voz en el destino. En primer lugar la señal análoga del teléfono es digitalizada en señales de pulso (PCM) a través de un codec de voz. 
+	Las muestras PCM se comprimen y se fraccionan en paquetes que pueden ser transmitidos a traves de una red. En el extremo contrario se realiza  las mismas operaciones en orden inverso. 
+	%digitalizando la voz en paquetes de datos, enviándola a través de la red y reconvirtiéndola a voz en el destino. Básicamente el proceso comienza con la señal análoga del teléfono que es digitalizada en señales PCM (pulse code modulación) por medio del codificador/decodificador de voz (codec). Las muestras PCM son pasadas al algoritmo de compresión, el cual comprime la voz y la fracciona en paquetes que pueden ser transmitidos para este caso a través de una red privada WAN. En el otro extremo de la nube se realizan exactamente las mismas funciones en un orden inverso.
 	
 	\subsection{Telefonía IP vs. Telefonía Convencional}
 		Los sistemas de telefonía tradicional están guiados por un sistema muy simple pero ineficiente denominado conmutación de circuitos.\\
@@ -299,15 +303,21 @@ SIP y VoIP} % Subtitle
 		Establecidos los retardos de tránsito y de procesado de la conversación, la conversación es aceptable si este se encuentra entre los 50 - 150 ms. 
 		El ratardo puede causar dos problemas principales:
 		\begin{itemize}
-			\item \textbf{Eco}: causado por las señales que se reflejan en el equipo telefónico del extremo opuesto y regresan al hablante.
-			\item \textbf{Pérdida de tramas}: se puede ocasionar por una congestión de red o corrupción de datos. Como la voz se transmite a tiempo real, no es práctico retransmitir las tramas perdidas ya que puede producir retardos adicionales. La retransmisión de muestras de voz perdidas son llamadas \textbf{Frame Erasures}. La pérdida de tramas afecta a la calidad de voz dependiendo del modo de gestión de los \textbf{Frame Erasures} que usen los terminales de voz.
+			\item \textbf{Eco:} causado por las señales que se reflejan en el equipo telefónico del extremo opuesto y regresan al hablante.
+			\item \textbf{Pérdida de tramas:} se puede ocasionar por una congestión de red o corrupción de datos. Como la voz se transmite a tiempo real, no es práctico retransmitir las tramas perdidas ya que puede producir retardos adicionales. La retransmisión de muestras de voz perdidas son llamadas \textbf{Frame Erasures}. La pérdida de tramas afecta a la calidad de voz dependiendo del modo de gestión de los \textbf{Frame Erasures} que usen los terminales de voz.
 		\end{itemize}
 		
 		\subsubsection{Jitter} \label{jitter}
 			Variación de tiempo entre los paquetes causada por la red. Suele considerarse como una señal de ruido, en general como un cambio indeseado y abrupto de la propiedad de una señal. Puede afectar tanto a la amplitud como a la frecuencia o fase.
 			Existen distintos tipos:
 			\begin{description}
-				\item[- Jitter determinista:] Las partes periódicas del jitter. Surge normalmente a partir de señales de ruido externas que se acoplan al sistema de transmisión o las partes del jitter dependientes de los datos. Estas partes dependen de las consecuencias de los datos enviados y son provocadas por la interferencia entre símbolos.
+				\item[- Jitter determinista:] En partes periódicas del jitter, surge a partir de señales de ruido externas que se acoplan al sistema de transmisión. En las partes del jitter dependientes de los datos dependen de las consecuencias de los datos enviados y son provocadas por la interferencia entre símbolos.
 				\item[- Jitter aleatorio:] Este surge a raíz del ruido.
 			\end{description}
+		\subsection{Caracteristicas de VoIP}
+		\begin{itemize}
+			\item \textbf{Seguridad:} Puesto que el protocolo SIP encripta y autentifica los mensajes de señalización y junto con RTP que encripta el medio transportado, se proporciona una comunicación segura.
+			\item \textbf{Packet Switched:} Permite que el encapsulamiento de datos que serán distribuidos por el medio compartido. Esto quiere decir que el audio producido viaja en forma de datos por el medio.
+			\item \textbf{Operatividad:} Esta tecnología esta operativa en cualquier lugar con conexión a la red, pero es necesaria conexión de banda ancha para asegurar la calidad de la llamada.
+		\end{itemize}
 \end{document}
