@@ -244,8 +244,8 @@ SIP y VoIP} % Subtitle
 			\item A través de redes públicas como internet, que tienen una calidad de servicio más reducida.
 		\end{itemize}
 	\subsection{Funcionamiento}
-	Se digitaliza la voz en paquetes de datos que se envían por la red para volverla a convertir a voz en el destino. En primer lugar, la señal análoga del teléfono es digitalizada en señales de pulso(PCM) a través de un codec de voz. 
-	Las muestras PCM se comprimen y se fraccionan en paquetes que pueden ser transmitidos a través de una red. En el extremo contrario se realizan las mismas operaciones en orden inverso.
+		Se digitaliza la voz en paquetes de datos que se envían por la red para volverla a convertir a voz en el destino. En primer lugar, la señal análoga del teléfono es digitalizada en señales de pulso(PCM) a través de un codec de voz. 
+		Las muestras PCM se comprimen y se fraccionan en paquetes que pueden ser transmitidos a través de una red. En el extremo contrario se realizan las mismas operaciones en orden inverso.
 	
 	\subsection{Telefonía IP vs. Telefonía Convencional}
 		Los sistemas de telefonía tradicional están guiados por un sistema muy simple pero ineficiente denominado conmutación de circuitos.\\
@@ -276,7 +276,7 @@ SIP y VoIP} % Subtitle
 		\subsection{Calidad de servicio (QoS)}
 		Para poder implementar \textbf{VoIP}(así como otros servicios interactivos), resulta un requisito indespensable la aplicación de \textbf{QoS}.
 		
-		\textbf{QoS} es el rendimiento promedio visto por los usuarios de una red de telefonía o de ordenadores. Cuantitativamente, se mide considerando varios aspectos del servicio de red:
+		\textbf{QoS} es el rendimiento promedio visto por los usuarios de una red de telefonía o de ordenadores. Cuantitativamente, se miden considerando varios aspectos del servicio de red:
 		\begin{itemize}
 			\item Tasas de errores.
 			\item Ancho de banda.
@@ -313,10 +313,11 @@ SIP y VoIP} % Subtitle
 				\item[- Jitter determinista:] En partes periódicas del jitter, surge a partir de señales de ruido externas que se acoplan al sistema de transmisión. En las partes del jitter dependientes de los datos, dependen de las consecuencias de los datos enviados y son provocadas por la interferencia entre símbolos.
 				\item[- Jitter aleatorio:] Este surge a raíz del ruido.
 			\end{description}
-		\subsection{Caracteristicas de VoIP}
+			
+		\subsection{Características de VoIP}
 		\begin{itemize}
 			\item \textbf{Seguridad:} Puesto que el protocolo \textbf{SIDP} encripta y autentifica los mensajes de señalización y junto con \textbf{TP{S+Vo}} que encripta el medio transportado, se proporciona una comunicación segura.
-			\item \textbf{Packet Switched:} Permite que el encapsulamiento de datos que serán distribuidos por el medio compartido. Esto quiere decir que el audio producido viaja en forma de datos por el medio.
+			\item \textbf{Packet Switched:} Permite el encapsulamiento de datos que serán distribuidos por el medio compartido. Esto quiere decir que el audio producido viaja en forma de datos por el medio.
 			\item \textbf{Operatividad:} Esta tecnología está operativa en cualquier lugar con conexión a la red, pero es necesaria conexión de banda ancha para asegurar la calidad de la llamada.
 		\end{itemize}
 \end{document}
